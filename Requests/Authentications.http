@@ -1,0 +1,36 @@
+﻿### signup
+POST {{host}}/{{api-version}}/shop/signup
+Content-Type: application/json
+x-api-key: 2fa72d65a0524c02974868507e45695d
+
+{
+    "name": "name1",
+    "email": "email1",
+    "password": "password1"
+}
+
+### login
+POST {{host}}/{{api-version}}/shop/login
+Content-Type: application/json
+x-api-key: 2fa72d65a0524c02974868507e45695d
+
+{
+  "email": "email1",
+  "password": "password1"
+}
+
+### logout
+POST {{host}}/{{api-version}}/shop/logout
+Content-Type: application/json
+x-api-key: 2fa72d65a0524c02974868507e45695d
+x-client-id: 64d46dda2a5f853485e1a56b
+authorization: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGQ0NmRkYTJhNWY4NTM0ODVlMWE1NmIiLCJlbWFpbCI6ImVtYWlsMSIsImV4cCI6MTY5MTg2MDY1M30.qs3SSC5FpNNVZOZZN4Zlw938RdGR0KZJ_lJs2PwgPR4
+
+{}
+
+### refreshToken
+POST {{host}}/{{api-version}}/shop/refresh-token
+Content-Type: application/json
+x-api-key: 2fa72d65a0524c02974868507e45695d
+x-client-id: 64d46dda2a5f853485e1a56b
+x-refresh-token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGQ0NmRkYTJhNWY4NTM0ODVlMWE1NmIiLCJlbWFpbCI6ImVtYWlsMSIsImV4cCI6MTY5MjMzNzg0MH0.W1vowebJ1OQRgu4pJyY1huYrtxGUsSjKgCoLSXb-eug
